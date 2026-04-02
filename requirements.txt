@@ -1,7 +1,7 @@
 #xlwings~=0.33.16
 watchdog~=6.0.0
 #pandas~=2.3.3
-openpyxl~=3.1.5
+#openpyxl~=3.1.5
 #streamlit~=1.55.0
 # wxPython~=4.2.5
 typing_extensions~=4.15.0
