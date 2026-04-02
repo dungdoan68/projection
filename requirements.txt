@@ -5,7 +5,7 @@ watchdog~=6.0.0
 #streamlit~=1.55.0
 # wxPython~=4.2.5
 typing_extensions~=4.15.0
-pywin32==311;platform_system == "Windows"pillow~=12.1.1
+pywin32<=311;platform_system == "Windows"
 numpy~=2.3.5
 pip~=23.2.1
 pathlib~=1.0.1
