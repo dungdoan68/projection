@@ -3,11 +3,7 @@ import os.path
 import shutil as sh
 import pandas as pd
 import time
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent / "src"))
-
-import src
+from src import map_SI_ILP2026
 from data import data_source
 import xlwings as xw
 from openpyxl.utils import get_column_letter
@@ -73,7 +69,7 @@ def get_Copy_Paste_Value_Hidden_Cells(source_sheet, get_Key_Values, target_sheet
         values_to_copy = source_sheet.range(get_Key_Values[key][0]).value
         target_sheet.range(get_Key_Values[key][1]).value = values_to_copy
         target_sheet.cells.last_cell.row
-        get_Remove_Redundant_Col(target_sheet, src.map_SI_ILP2026.get_Remove_Redundant)
+        get_Remove_Redundant_Col(target_sheet, map_SI_ILP2026.get_Remove_Redundant)
         end_time = time.perf_counter()
         elapsed_time = end_time - start_time
         print(
@@ -85,7 +81,7 @@ def get_Copy_Paste_MUT_Value(source_sheet, sheet_Copy, cell_Copy, cell_Paste, ta
     values_to_copy = source_sheet.range(sheet_Copy.range(cell_Copy).value).value
     target_sheet.range(cell_Paste).value = values_to_copy
     # target_sheet.cells.last_cell.row
-    get_Remove_Redundant_Col(target_sheet, src.map_SI_ILP2026.get_Remove_Redundant)
+    get_Remove_Redundant_Col(target_sheet, map_SI_ILP2026.get_Remove_Redundant)
     end_time = time.perf_counter()
     elapsed_time = end_time - start_time
     print(
