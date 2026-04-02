@@ -6,12 +6,9 @@ import xlwings as xw
 import tkinter as tk
 from tkinter import filedialog
 import sys
-import os.path
-# sys.path.append(str(Path(__file__).parent / "src/ilp2026"))
-import pathlib
-_parentdir = pathlib.Path(__file__).parent.parent.resolve()
-sys.path.insert(0, str(_parentdir))
-import ilp2026, utils_helper, map_SI_ILP2026
+from pathlib import Path
+sys.path.append(os.path.abspath('../'))
+from src import ilp2026, utils_helper, map_SI_ILP2026
 from data import data_source
 
 UL = 'UL_Copay0.xlsb'
