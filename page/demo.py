@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import filedialog
 import sys
 os.path.dirname("src/")
+st.write(os.path.dirname("src/"))
 from src import ilp2026, utils_helper, map_SI_ILP2026
 from data import data_source
 
