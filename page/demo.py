@@ -4,11 +4,9 @@ import xlwings as xw
 import tkinter as tk
 from tkinter import filedialog
 import sys
-os.path.dirname(os.path.abspath(__file__))
+os.path.dirname("src/")
 from src import ilp2026, utils_helper, map_SI_ILP2026
 from data import data_source
-
-print(sys.path.append(os.path.abspath('../')))
 
 UL = 'UL_Copay0.xlsb'
 Term = 'TermBase_Copay0.xlsm'
