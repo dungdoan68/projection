@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import filedialog
 import sys
 sys.path.append(str(Path(__file__).parent / "src/ilp2026"))
-from /mount/src/projection import ilp2026
+from mount/src/projection import ilp2026
 from data import data_source
 
 UL = 'UL_Copay0.xlsb'
