@@ -11,7 +11,6 @@ from openpyxl import load_workbook
 LabelName = 'INTERNAL v2'
 LabelId = '5a27cab5-59e6-424d-abbb-227cd06504a3'
 
-
 def get_Input_Value(cell, value, fileName, sheetName):
     wb = xw.Book(fileName)
     app = wb.app
