@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import xlwings as xw
+xw.utils.license_key = "noncommercial"
 import tkinter as tk
 import pandas as pd
 from tkinter import filedialog
@@ -70,8 +71,8 @@ source_wb = get_File_SI()
 
 def get_Open_SI_File():
     if source_wb!=None:
-        return pd.read_excel(source_wb, engine="pyxlsb")
-        # return xw.Book(source_wb)
+        # return pd.read_excel(source_wb, engine="pyxlsb")
+        return xw.Book(source_wb)
 
 
 selected_Type_to_Test = st.selectbox("Type run: ", ["PWS_By_List", "Compare_PDF_SI_By_Case_List",
