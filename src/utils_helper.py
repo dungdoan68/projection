@@ -26,7 +26,7 @@ def get_Input_Value(cell, value, fileName, sheetName):
 
 def get_Input_Value(wb, sheetName, cell, value):
     # wb = xw.books.open(Data_Source.SOURCE_FILE_ILP_2026_PUBLIC_SI)
-    xw.books.active
+    # xw.books.active
     sheet = wb.sheets[sheetName]
     sheet.range(cell).value = value
     get_wait_for_excel(wb, 0.1)
