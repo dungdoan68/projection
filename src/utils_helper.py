@@ -3,7 +3,10 @@ import os.path
 import shutil as sh
 import pandas as pd
 import time
-from src import map_SI_ILP2026
+
+import sys
+sys.path.append(os.path.realpath("src"))
+import map_SI_ILP2026
 from data import data_source
 import xlwings as xw
 from openpyxl.utils import get_column_letter
