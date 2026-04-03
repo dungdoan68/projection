@@ -6,7 +6,7 @@ from tkinter import filedialog
 import sys
 os.path.dirname("src/")
 st.write(os.path.dirname("src/"))
-from src import ilp2026, utils_helper, map_SI_ILP2026
+import ilp2026, utils_helper, map_SI_ILP2026
 from data import data_source
 
 UL = 'UL_Copay0.xlsb'
