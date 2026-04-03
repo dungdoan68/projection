@@ -2,6 +2,8 @@ import time
 import os
 from datetime import datetime
 
+import sys
+print(sys.path.append(os.path.realpath("src")))
 from src import utils_helper
 from src import map_SI_ILP2026
 from data import data_source
