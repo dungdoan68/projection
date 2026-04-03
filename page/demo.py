@@ -78,13 +78,13 @@ selected_Type_to_Test = st.selectbox("Type run: ", ["PWS_By_List", "Compare_PDF_
 
 
 def select_Dir_Save_File():
-    root = tk.Tk()
-    root.withdraw()
-    root.wm_attributes('-topmost', 1)
-    if st.button('Save file as'):
-        folder_selected = filedialog.askdirectory(master=root)
-        st.write("File save as: " + folder_selected)
-        return os.path.abspath(folder_selected)
+    # root = tk.Tk()
+    # root.withdraw()
+    # root.wm_attributes('-topmost', 1)
+    # if st.button('Save file as'):
+    #     folder_selected = filedialog.askdirectory(master=root)
+    #     st.write("File save as: " + folder_selected)
+    #     return os.path.abspath(folder_selected)
 
 
 def select_Dir_File_Projection_PDF():
