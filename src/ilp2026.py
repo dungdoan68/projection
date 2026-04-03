@@ -3,9 +3,10 @@ import os
 from datetime import datetime
 
 import sys
-print(sys.path.append(os.path.realpath("src")))
+sys.path.append(os.path.realpath("src"))
+sys.path.append(os.path.realpath("data"))
 import utils_helper, map_SI_ILP2026
-from data import data_source
+import data_source
 import xlwings as xw
 
 # SOURCE_WB = xw.Book(data_source.SOURCE_FILE_ILP_2026_PUBLIC_SI)
