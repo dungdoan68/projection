@@ -6,8 +6,9 @@ import time
 
 import sys
 sys.path.append(os.path.realpath("src"))
+sys.path.append(os.path.realpath("data"))
 import map_SI_ILP2026
-from data import data_source
+import data_source
 import xlwings as xw
 from openpyxl.utils import get_column_letter
 from openpyxl import load_workbook
